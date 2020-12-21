@@ -1,11 +1,11 @@
 {
-    "name": "teamapp",
-    "short_name": "teamapp",
+    "name": "Team Six App",
+    "short_name": "TeamApp",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#008080",
+    "theme_color": "#008080",
+    "description": "Previnir é melhor remédio 🏋🏼",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
