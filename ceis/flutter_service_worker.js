@@ -31,13 +31,15 @@ const RESOURCES = {
 "assets/packages/font_awesome_flutter/lib/fonts/fa-regular-400.ttf": "a126c025bab9a1b4d8ac5534af76a208",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-solid-900.ttf": "d80ca32233940ebadc5ae5372ccd67f9",
 "assets/packages/wakelock_web/assets/no_sleep.js": "7748a45cd593f33280669b29c2c8919a",
-"icons/Icon-192.png": "392e3c37f82a89798c8d02ed0c0acdda",
-"icons/Icon-512.png": "3297a890af8f6cba1a2121729be93ffe",
-"icons/logo.png": "22d23ff51312ea6e00f40ee37d8cc56b",
-"index.html": "503d0e75dcbbf3f263d6f6c89a42be60",
-"/": "503d0e75dcbbf3f263d6f6c89a42be60",
+"icons/Icon-192.png": "10494acb3d7bc7df67e5b7129d255517",
+"icons/Icon-512.png": "10494acb3d7bc7df67e5b7129d255517",
+"icons/logo.png": "10494acb3d7bc7df67e5b7129d255517",
+"icons/logo_old.png": "22d23ff51312ea6e00f40ee37d8cc56b",
+"index.html": "02d1c3201e6425d3475873a44871e26a",
+"/": "02d1c3201e6425d3475873a44871e26a",
+"logo-short.png": "eeeddbe6013c13dfdc4801bf201371a8",
 "main.dart.js": "6bddf96ef4bd5667867d7825e16125cc",
-"manifest.json": "8c3221a3892d5dbda3615ec9aa40eb46",
+"manifest.json": "219d1b1e240dcb05ca2bc9c2535cd64d",
 "version.json": "56113987be19f343993bc2a759e91209"
 };
 
