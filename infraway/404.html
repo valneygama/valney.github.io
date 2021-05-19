@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erro 404 - P&aacute;gina n&atilde;o encontrada</title>
+    <style>
+      html,body{font-family:Helvetica, 'Helvetica Neue', Sans-serif;line-height:1.5em;display:flex;
+        align-items:center;justify-content: center;height:95%;color:#333;background-color:#f8f9fa;}
+      .panel {margin:1em auto;max-width:600px;border:solid 1px #002299;padding:1em;border-radius:3px;
+        background-color: #fff;border: 1px solid transparent;border-radius: 4px;color:#333;
+        -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+        box-shadow: 0 1px 1px rgba(0,0,0,.05); box-shadow: 0 20px 27px 0 rgb(0 0 0 / 5%); }
+      .panel h1 {text-align:center;font-size:30px;margin:0px;line-height:1.3em;}
+      hr{border: 0;border-top: 1px solid #eee;}
+    </style>
+    <script>
+        var types = ['svg', 'png', 'ico', 'jpg', 'gif'];
+        function changeImageSrc(elem){
+          const index = types.findIndex( (type, index, array) => elem.src.toLowerCase().includes(type) );
+          if (index < types.length-1 ) {
+              elem.src = elem.src.replace(types[index],types[index+1]);
+          }            
+        }
+    </script>
+  </head>
+  <body>
+    <div class="panel">
+      <h1>
+        <img id="logo" src="./favicon.svg" style="height: 84px; margin: .5em auto;" onerror="changeImageSrc(this)" /><br/>
+        Erro 404 - P&aacute;gina n&atilde;o encontrada
+      </h1>
+      <hr/>
+      <p>
+        O que voc&ecirc; procurava n&atilde;o se encontra por aqui. 
+        Talvez o link esteja quebrado ou o <strong>sistema esteja em manuten&ccedil;&atilde;o</strong>.
+        Voc&ecirc; pode:
+        <ul>
+          <li><a href="javascript:history.back()">Voltar à página anterior</a></li>
+          <li><a href="./"> Ir Para a Página Inicial</a></li>
+        </ul>
+      </p>
+    </div>
+    <a href="http://maida.health"><img src="maida.svg" style="position: fixed; bottom: .5rem; right: .5rem; height: 24px;" /></a>
+  </body>
+</html>
