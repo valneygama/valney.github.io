@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Recursive:wght@500;700&family=Roboto:wght@400;500&display=swap');
+
+        html, body {
+            background-color: #f8f9fa!important;
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            color: #252f40;
+            margin: 0;padding: 0;
+        }
+        * {
+            transition: all .3s ease-in;
+            box-sizing: border-box;
+
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Recursive', sans-serif;
+            padding-left: 1em;
+            padding-right: 1em;
+        }
+        header {
+            padding: 1em 0;
+            background: linear-gradient( 180deg , #e2e2e2, #f8f9fa);
+        }
+        header h1 {
+            line-height: 3rem;
+            margin: 0;
+            padding-top: 0;            
+        }
+        h1 small {
+            color: #666;
+            font-size: 16px;
+        }
+        h1 img {
+            height: 2rem;
+            top: .5rem;
+            position: relative;
+            margin-right: 1rem;
+        }
+        .area {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            background-color: white;
+            padding: 1em;
+            border-radius: 4px;
+            margin: 1em .5em 2em .5em;
+            box-shadow: 0 20px 27px 0 rgb(0 0 0 / 5%);
+            gap: 1em;
+        }
+        .no-shadow {
+            box-shadow: none !important;
+        }
+        .no-bg {
+            background-color: transparent !important;
+        }
+        .card {
+            box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+            border-radius: 10px;
+            padding: 2rem;
+            text-decoration: none;
+            font-size: 18px;
+            text-align: center;
+        }
+        a.card {
+            color: white;
+            width: 196px;
+        }
+        .bg-red {background-color:rgb(220, 38, 38); background: linear-gradient(45deg, rgb(220 38 38), rgb(168 7 7));}
+        .bg-cyan {background-color:rgb(14, 165, 233); background: linear-gradient(45deg, rgb(14 165 233), rgb(14 106 233));}
+        .bg-blue {background-color:rgb(14, 106, 233); background: linear-gradient(45deg, rgb(14 106 233), rgb(2 78 192));}
+        .bg-green {background-color:rgb(16, 185, 129); background: linear-gradient(45deg, rgb(16 185 129), rgb(1 154 103));}
+        .bg-navy {background-color:rgb(51, 65, 85); background: linear-gradient(45deg, rgb(63 83 111), rgb(50 59 72));}
+        .bg-yellow {background-color:rgb(234, 179, 8); background: linear-gradient(45deg, rgb(234 179 8), rgb(220 135 38));}
+        .bg-orange {background-color:rgb(220, 135, 38); background: linear-gradient(45deg, rgb(220 135 38), rgb(220 38 38));}
+        .bg-purple {background-color:rgb(86, 77, 128); background: linear-gradient(45deg, rgb(128 98 167), rgb(86 77 128));}
+        
+        .card img {
+            border-radius: 100%;
+            height: 42px;
+            background-color: white;
+            padding: .25rem;
+            margin: 0px auto;
+            display: block;
+            margin: 0 auto .5rem auto;
+            text-align: center;
+            box-shadow:  0px 0px 2px 2px rgba(0,0,0,.05);
+            transition: all .15s;
+        }
+        a.card:hover, a.card:hover img{
+            box-shadow:  0px 0px 6px 4px rgb(0 0 0 / 10%);
+        }
+        a.card:hover img {
+            transform: scale(1.1);
+        }
+
+        @media screen and (max-width: 1248px) {
+            .area {grid-template-columns: repeat(4, 1fr);}
+            .area .card {width: auto;}
+        }
+        @media screen and (max-width: 1024px) {
+            .area {grid-template-columns: repeat(3, 1fr);}
+        }
+        @media screen and (max-width: 800px) {
+            .area {grid-template-columns: repeat(2, 1fr);}
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>
+            <a href="https://maida.health" target="_blank"><img src="https://maida.health/wp-content/themes/maida/assets/imgs/maida_logo.svg" /></a>
+            Infraway
+            <small>Descrição curta do que temos aqui</small>
+        </h1>
+    </header>
+
+    <div class="content">
+        
+        <h2>ETC</h2>
+        <div class="area area-btn no-shadow no-bg">
+            <a class="card bg-blue" href="https://infoway.atlassian.net/jira/your-work">
+                <img src="./img/jira.png" />
+                Jira
+            </a>
+        </div>
+
+        <h2>Monitoramento</h2>
+        <div class="area area-btn">
+            <a class="card bg-cyan" href="https://inas.maida.health/portainer">
+                <img src="./img/portainer.png" />
+                Portainer
+            </a>
+            <a class="card bg-red" href="https://zabbix.maida.health/">
+                <img src="./img/zabbix.jpg" />
+                Zabbix
+            </a>
+            <a class="card bg-orange" href="?">
+                <img src="./img/prometheus.png" />
+                Prometheus
+            </a>
+            <a class="card bg-yellow" href="?">
+                <img src="./img/grafana.png" />
+                Grafana
+            </a>
+            <a class="card bg-navy" href="http://elastic.maida.health/">
+                <img src="./img/elastic.png" />
+                Elastic
+            </a>
+        </div>
+
+        <h2>Gerenciamento</h2>
+        <div class="area area-btn">
+            <a class="card bg-red" href="?">
+                <img src="./img/rundeck.png" />
+                Rundeck
+            </a>
+            <a class="card bg-yellow" href="?">
+                <img src="./img/teampass.ico" />
+                Teampass
+            </a>
+            <a class="card bg-green" href="?">
+                <img src="./img/linode.png" />
+                Linode
+            </a>
+            <a class="card bg-purple" href="?">
+                <img src="./img/heroku.png" />
+                Heroku
+            </a>
+            <a class="card bg-orange" href="?">
+                <img src="./img/aws.png" />
+                AWS 
+            </a>
+            <a class="card bg-blue" href="?">
+                <img src="./img/digitalocean.png" />
+                DigitalOcean
+            </a>
+            <a class="card bg-orange" href="?">
+                <img src="./img/cloudflare.jpg" />
+                CloudFlare
+            </a>
+            <a class="card bg-red" href="?">
+                <img src="./img/jenkins.png" />
+                JenkinsInfra
+            </a>
+            <a class="card bg-red" href="?">
+                <img src="./img/jenkins.png" />
+                Jenkins
+            </a>
+        </div>
+    </div>
+    
+</body>
+</html>
